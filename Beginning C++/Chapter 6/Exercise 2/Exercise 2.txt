@@ -1,0 +1,12 @@
+What's wrong with the following program?
+
+int main()
+{
+	int score;
+	score = 1000;
+	float& rScore = score;
+	return 0;
+}
+
+The problem is the float& in the code. Instead, it should be int&,
+so it is referencing the same data type.

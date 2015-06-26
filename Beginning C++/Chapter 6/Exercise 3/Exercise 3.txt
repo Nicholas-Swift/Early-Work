@@ -1,0 +1,10 @@
+What's wrong with the following function?
+
+int& plusThree(int number)
+{
+	int threeMore = number + 3;
+	return threeMore;
+}
+
+The problem is that you are defining a reference before the variable. You should
+never do that. Instead, you should define the variable before the reference.

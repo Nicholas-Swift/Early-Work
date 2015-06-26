@@ -1,0 +1,22 @@
+Will the three memory addresses displayed by the following program all be the same?
+Explain what's going on in the code.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 10;
+	int& b = a;
+	int* c = &b;
+
+	cout<<&a<<endl;
+	cout<<&b<<endl;
+	cout<<&(*c)<<endl;
+
+	return 0
+}
+
+All three memory adresses displayed will be the same, because the reference is to int a's
+memory adress, and the pointer is to int a's memory adress. They all point to the same
+memory adress.

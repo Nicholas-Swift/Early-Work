@@ -1,0 +1,21 @@
+What design problem does the following program have?
+
+#include <iostream>
+using namespace std;
+
+class Critter
+{
+public:
+	int GetHunger() const {return m_Hunger;}
+private:
+	int m_Hunger;
+};
+
+int main()
+{
+	Critter crit;
+	cout<<crit.GetHunger()<<endl;
+	return 0;
+}
+
+m_Hunger has no value set to it and there is no Critter() declaration in the class.

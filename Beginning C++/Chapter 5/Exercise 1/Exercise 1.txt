@@ -1,0 +1,8 @@
+What's wrong with the following prototype?
+
+
+int askNumber(int low = 1, int high);
+
+If you set low as 1, you also have to set high to a number, because it comes after
+low. To fix this, the code should be changed to:
+int askNumber(int high, int low = 1);

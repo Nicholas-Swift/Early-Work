@@ -1,0 +1,17 @@
+What's wrong with the following code?
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int* pScore = new int;
+	*pScore = 500;
+	pScore = new int(1000);
+	delete pScore;
+	pScore = 0;
+
+	return 0;
+}
+
+*pScore is pointing to a new int. It is a memory leak, as the new int isn't deleted?

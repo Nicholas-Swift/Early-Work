@@ -1,0 +1,23 @@
+Assuming that 'scores' is a vector that holds elements of type int,
+what's wrong with the following code snippet (meant to increment
+each element)?
+
+vector<int>::iterator iter;
+//increment each score
+for (iter = scores.begin(); iter != scores.end(); ++iter);
+{
+	iter++;
+}
+
+The following code doesn't work because the 'iter++' is incrementing the iter
+which is part of the for loop.
+
+To get it to work, you need to increment the value that the iterator is pointing to,
+not the actual iterator. The code below is what SHOULD be used.
+
+vector<int>::iterator iter;
+//increment each score
+for (iter = scores.begin(); iter != scores.end(); ++iter);
+{
+	*iter += 1;
+}

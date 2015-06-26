@@ -1,0 +1,11 @@
+What's wrong with the following loop?
+
+int x = 0;
+while (x)
+(
+	++x;
+	cout<<x<<endl;
+}
+
+The loop will go on forever and forever. You should add a parameter in the while(), so 
+that x will stop at a certain limit.

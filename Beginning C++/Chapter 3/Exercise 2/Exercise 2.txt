@@ -1,0 +1,9 @@
+What's wrong with the following code?
+
+for (int i = 0; i <= phrase.size(); ++i)
+{
+	cout<<"Character at position "<<i<<" is: "<<phrase[i]<<endl;
+}
+
+The code should be switched to: i < phrase.size();
+It will automatically take the whole string anyway, if it is <=, it is over.
