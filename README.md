@@ -8,4 +8,4 @@
 ![Server](http://www.nicholas-swift.com/thumbs/Early%20Work/server-thumb.jpg)
 ![Space Shooter](http://www.nicholas-swift.com/thumbs/Early%20Work/space-shooter-thumb.jpg)
 
-Some of my early work in programming
+This is some of my early work in programming. You can find some of my first ever programming in the Beginning C++ folder. 
